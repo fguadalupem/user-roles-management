@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --qbit-blue: #005EB8;
+  --qbit-blue-light: #0077D4;
+  --qbit-blue-dark: #004A94;
+  --qbit-green: #8DC63F;
+  --qbit-green-light: #A5D55F;
+  --qbit-green-dark: #75AD2F;
+  --snow: #FAFAFA;
+  --smoke: #F5F5F5;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--smoke);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--qbit-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--qbit-blue-dark);
+}
